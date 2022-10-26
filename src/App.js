@@ -6,15 +6,12 @@ function App() {
     <main className="App">
       <header>
         <h1>devfinder</h1>
-        <button>Light 
-        <Icon name='twitter' width="25px" height="25px"/>
+        <button className='theme-toggle'>Light 
+        <Icon name='sun'/>
         </button>
       </header>
 
-      <div>
-        <input type="text" />
-      </div>
-
+    
     </main>
   );
 }
