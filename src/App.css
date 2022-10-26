@@ -11,3 +11,18 @@
   --font-color: #4B6A9B;
   --primary-color: #FEFEFE;
 }
+
+button {
+  color: var(--accent-color);
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 89px;
+  height: 20px;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+svg {
+  fill: currentColor;
+}
