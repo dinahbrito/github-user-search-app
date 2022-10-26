@@ -11,6 +11,14 @@ function App() {
         </button>
       </header>
 
+      <div className='search-bar'>
+        <input type="search" placeholder="Search GitHub username.." />
+        <button type="submit">Search</button>
+      </div>
+
+    <div>
+      stuff
+    </div>
     
     </main>
   );

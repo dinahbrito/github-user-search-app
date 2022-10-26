@@ -1,10 +1,7 @@
-const Location = (className, height, width) => {
+const Location = (className) => {
   return (
     <svg
-      className={className}
-      height={height}
-      width={width}
-      viewBox="0 0 20 20"
+
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

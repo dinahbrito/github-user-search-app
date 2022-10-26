@@ -32,7 +32,7 @@ header {
   margin-bottom: 2.25rem;
 }
 
-.theme-toggle {
+button.theme-toggle {
   align-items: center;
   background-color: transparent;
   border: none;
@@ -45,7 +45,7 @@ header {
 
 .theme-toggle svg {
   fill: currentColor;
-  width: 20px;
-  height: 20px;
   margin-left: 1rem;
+  height: 20px;
+  width: 20px;
 }
