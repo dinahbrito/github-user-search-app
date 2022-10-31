@@ -1,35 +1,39 @@
-import './App.css';
-import {Icon} from "./components/icon"
-import {useState} from 'react';
-import { useEffect } from 'react';
+import "./App.css";
+import { Icon } from "./components/icon";
+import { useState, useEffect } from "react";
+import Search from "./components/SearchBar";
+import SearchBar from "./components/SearchBar";
+import Results from "./components/Results";
+
 
 function App() {
-const [theme, setTheme] = useState(
-  localStorage.getItem('theme') || 'dark'
-  );
-const toggleTheme = () => {
-  if (theme === 'dark') {
-    setTheme('light');
-  } else {
-    setTheme('dark');
-  }
-};
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
 
-useEffect(() => {
-  localStorage.setItem('theme', theme);
-  document.body.className = theme;
-}, [theme]);
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    document.body.className = theme;
+  }, [theme]);
 
   return (
     <main className={`App ${theme}`}>
       <header>
         <h1>devfinder</h1>
-        <button className='theme-toggle' onClick={toggleTheme}>Light 
-        <Icon name='sun'/>
+        <button className="theme-toggle" onClick={toggleTheme}>
+          Light
+          <Icon name="sun" />
         </button>
       </header>
 
-    
+    <SearchBar />
+    <Results />
+
     </main>
   );
 }
