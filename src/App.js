@@ -1,10 +1,7 @@
 import "./App.css";
 import { Icon } from "./components/icon";
 import { useState, useEffect } from "react";
-import Search from "./components/SearchBar";
-import SearchBar from "./components/SearchBar";
-import Results from "./components/Results";
-
+import Search from "./components/Search";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
@@ -21,6 +18,7 @@ function App() {
     document.body.className = theme;
   }, [theme]);
 
+
   return (
     <main className={`App ${theme}`}>
       <header>
@@ -31,9 +29,7 @@ function App() {
         </button>
       </header>
 
-    <SearchBar />
-    <Results />
-
+      <Search />
     </main>
   );
 }
